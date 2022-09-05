@@ -4,7 +4,7 @@
     "slug": "lollys-recipe-app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/LP_Retro_Logo.png",
+    "icon": "./assets/lolly-icon.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
@@ -22,7 +22,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/LP_Retro_Logo.png",
+        "foregroundImage": "./assets/lolly-icon.png",
         "backgroundColor": "#FFFFFF"
       }
     },
