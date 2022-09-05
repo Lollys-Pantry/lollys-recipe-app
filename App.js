@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { ActivityIndicator, StyleSheet, FlatList, Text, View, Image } from 'react-native';
+import { REACT_APP_BASE_URL } from '@env';
 
 export default function App() {
   const [isLoading, setLoading] = useState(true);
@@ -8,7 +9,7 @@ export default function App() {
 
   const getRecipes = async () => {
     try {
-      const response = await fetch('http://192.168.0.15:3000/api/v1/recipes');
+      const response = await fetch(`${REACT_APP_BASE_URL}`);
       const json = await response.json();
       setData(json);
     } catch (error) {
